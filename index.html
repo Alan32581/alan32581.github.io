@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Fixe</title>
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(-45deg, #ff6b6b, #6b6bff, #6bff95, #ffe66b);
+    background-size:400% 400%;
+    animation:fundo 10s ease infinite;
+}
+@keyframes fundo{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+.caixa{
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    color:white;
+    transition:0.4s;
+}
+.caixa:hover{
+    transform:scale(1.1) rotate(3deg);
+}
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+button:hover{
+    background:black;
+    color:white;
+}
+</style>
+</head>
+<body>
+<div class="caixa">
+    <h1>🚀 Site Fixe</h1>
+    <p>Passa o rato por cima desta caixa!</p>
+    <button onclick="alert('Olá! 😎')">Clica aqui</button>
+</div>
+</body>
+</html>
